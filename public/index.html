@@ -1,22 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teck Tracker</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teck Tracker</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <div class="fundo">
     <header>
-            <a href=""><img src="../public/img/Logo TechTracker.png" alt="Logo"></a>
-            <nav>
-                <a href="">Inicio</a>
-                <a href="">Produtos</a>
-                <a href="">Novidades</a>
-                <a href="">Contatos</a>
-            </nav>
+      <a href=""><img src="../public/img/Logo TechTracker.svg" alt="Logo"></a>
+      <nav>
+        <div class="espacamento">
+          <a class="navbar-a" href="">Inicio</a>
+          <div class="dropdown-wrapper">
+            <a id="produtos-btn" class="navbar-a" href="#">Produtos</a>
+            <div id="dropdown-menu" class="dropdown-menu">
+              <a href="#">Monitores ></a>
+              <a href="#">Gabinetes ></a>
+              <a href="#">Teclados ></a>
+              <a href="#">Mouses ></a>
+              <a href="#">Projetores ></a>
+            </div>
+          </div>
+          <a class="navbar-a" href="">Novidades</a>
+        </div>
+        <a class="navbar-a" href="">Contatos</a>
+      </nav>
     </header>
-    <script src="script.js"></script>
+
+    <section class="Pagina-Principal">
+      <div class="Pagina-Principal-organizao-coluna">
+        <div class="Pagina-Principal-1-titulo">
+          <h1>Maximize sua produtividade com os nossos equipamentos</h1>
+        </div>
+        <div class="Pagina-Principal-2-titulo">
+          <h1>Simplificamos sua vida com</h1>
+        </div>
+        <div class="Pagina-Principal-3-titulo">
+          <h1>Velocidade/tecnologia/locação de equipamentos</h1>
+        </div>
+        <button>
+          ALUGUE AQUI
+          <img src="../public/img/Collapse Arrow.png" alt="">
+        </button>
+      </div>
+    </section>
+  </div>
+  <div id="overlay"></div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
