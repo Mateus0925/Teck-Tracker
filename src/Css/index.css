@@ -20,43 +20,6 @@ body {
     width: 100%;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4.5rem 3.125rem;
-    flex-wrap: wrap;
-}
-
-header img {
-    width: 18rem;
-    height: auto;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-}
-
-nav div a {
-    margin-right: 1.5rem;
-}
-
-.espacamento {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
 .Pagina-Principal {
     display: flex;
     justify-content: center;

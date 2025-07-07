@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Css/Cadastro.css';
+import Header from './Header';
 
 function Cadastro() {
     return (

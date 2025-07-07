@@ -5,6 +5,7 @@ import Home from '../components/Home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Cadastro from '../components/Cadastro'
 import Produtos from '../components/Produtos'
+import Header from '../components/Header'
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 <Route path='/' element={<Home/>}/>
                 <Route path='/Cadastro' element={<Cadastro/>}/>
                 <Route path='/Produtos' element={<Produtos/>}/>
+                <Route path='/Header' element={<Header/>}/>
             </Routes>
         </BrowserRouter>
     )
