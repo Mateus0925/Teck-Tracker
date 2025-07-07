@@ -76,11 +76,10 @@ function Header() {
                 className="dropdown-menu"
                 ref={dropdownMenuRef}
               >
-                <a href="#">Monitores &gt;</a>
-                <a href="#">Gabinetes &gt;</a>
-                <a href="#">Teclados &gt;</a>
-                <a href="#">Mouses &gt;</a>
-                <a href="#">Projetores &gt;</a>
+                <Link to="/produtos/notebook">Notebook &gt;</Link>
+                <Link to="/produtos/gabinete">Gabinete &gt;</Link>
+                <Link to="/produtos/setups">Setups &gt;</Link>
+                <Link to="/produtos/monitores">Monitores &gt;</Link>
               </nav>
             </div>
 
