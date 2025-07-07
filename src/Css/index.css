@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+}
+
+.fundo {
+    background-color: rgba(0, 0, 0, 0.068);
+    background-image: url(../src/img/Flux_Dev_Render_an_image_with_a_dark_matte_black_background_fe_0\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.5rem 3.125rem;
+    flex-wrap: wrap;
+}
+
+header img {
+    width: 18rem;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav div a {
+    margin-right: 1.5rem;
+}
+
+.espacamento {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.Pagina-Principal {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+.Pagina-Principal-organizao-coluna {
+    margin-top: 8rem;
+    text-align: left;
+}
+
+.Pagina-Principal-1-titulo h1,
+.Pagina-Principal-2-titulo h1,
+.Pagina-Principal-3-titulo h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.Pagina-Principal-3-titulo h1 {
+    color: #0ee664;
+    font-weight: 700;
+}
+
+button {
+    font-size: 1rem;
+    color: white;
+    background-color: transparent;
+    width: 100%;
+    max-width: 15rem;
+    height: 3.5rem;
+    border-radius: 50px;
+    border: whitesmoke 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    transition: 0.3s;
+}
+
+/* Hover efeito */
+.navbar-a:hover {
+    color: #0EE664;
+    transition: 0.5s ease;
+}
+
+/* Dropdown Menu */
+.dropdown-wrapper {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 1000;
+    flex-direction: column;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-menu a {
+    color: #0ee664;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #111;
+}
+
+.dropdown-menu.show {
+    display: flex;
+}
+
+/* Overlay */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0);
+    display: none;
+    z-index: 500;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .Pagina-Principal-organizao-coluna {
+        margin-top: 5rem;
+    }
+
+    .Pagina-Principal-1-titulo h1,
+    .Pagina-Principal-2-titulo h1,
+    .Pagina-Principal-3-titulo h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 12rem;
+    }
+
+    .dropdown-menu {
+        min-width: 160px;
+    }
+
+    .dropdown-menu a {
+        font-size: 1rem;
+    }
+}
+
+/* Animação */
+
+.palavra {
+    font-size: 3rem;
+    color: #0ee664;
+    transition: transform 0.3s ease;
+    font-weight: 700;
+}
+
+.pular {
+    animation: pulo 0.5s ease;
+}
+
+@keyframes pulo {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

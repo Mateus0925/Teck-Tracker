@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.pagina-cadastro {
+  background-color: #323030;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cadastro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadastro-titulo h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.asterisco {
+  color: #0ee664;
+}
+
+.cadastro-campo {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.cadastro-campo h2 {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.campo-input {
+  background-color: #413e3e;
+  border: #696767 1px solid;
+  border-radius: 7px;
+  width: 400px;
+  padding: 5px 6px;
+  color: white;
+}
+
+.campo-textarea {
+  background-color: #413e3e;
+  border: #696767 1px solid;
+  border-radius: 7px;
+  width: 400px;
+  padding: 5px 6px;
+  color: white;
+  resize: none;
+}
+
+.cadastro-botao {
+  background-color: #0ee664;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+  padding: 10px 70px;
+  margin-top: 40px;
+  font-size: 26px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cadastro-botao:hover {
+  background-color: #0bc658;
+}
