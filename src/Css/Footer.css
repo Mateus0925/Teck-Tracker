@@ -1,0 +1,56 @@
+.footer {
+  background-color: #000000;
+  color: #00FF66;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  border-top: 2px solid #00FF66;
+}
+
+.contact-icons {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3rem;
+}
+
+.contact-icons img {
+  width: 28px;
+  height: 28px;
+  margin: 0 12px;
+  transition: transform 0.3s ease;
+  vertical-align: middle;
+}
+
+.contact-icons img:hover {
+  transform: scale(1.2);
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.header nav a:hover {
+  color: #00FF66;
+}
+
+.organizacao-footer {
+  text-align: left;
+  display: flex;
+  justify-content:row;
+  align-items: center;
+  justify-content: center;
+}
+
+.paragrafo-footer {
+  margin-bottom: 0.5rem;
+}
+
+.espacamento-footer{
+  margin-right: 20rem;
+}

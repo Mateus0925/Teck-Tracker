@@ -80,12 +80,13 @@ function Header() {
                 <Link to="/produtos/gabinete">Gabinete &gt;</Link>
                 <Link to="/produtos/setups">Setups &gt;</Link>
                 <Link to="/produtos/monitores">Monitores &gt;</Link>
+                
               </nav>
             </div>
 
-            <a className="navbar-a" href="#">Novidades</a>
+            <Link  className="navbar-a" to="/cadastro">Cadastro</Link>
           </div>
-          <a className="navbar-a" href="#">Contatos</a>
+          <Link  className="navbar-a" to="/carrinho">Carrinho</Link>
         </nav>
       </header>
 

@@ -3,6 +3,7 @@ import React from 'react';
 import PalavraAnimada from '../components/PalavraAnimada';
 import Header from '../components/Header';
 import "../Css/index.css";
+import Footer from './footer';
 
 function Home() {
   return (
@@ -19,13 +20,14 @@ function Home() {
               <h1>Simplificamos sua vida com</h1>
               <PalavraAnimada />
             </div>
-            <button style={{ cursor: "pointer" }}>
+            <button className='botao-home' style={{ cursor: "pointer" }}>
               ALUGUE AQUI
               <img src="../src/img/Collapse Arrow.png" alt="Seta" />
             </button>
           </div>
         </section>
       </div>
+      <Footer/>
     </>
   );
 }

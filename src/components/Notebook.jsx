@@ -1,9 +1,11 @@
 import React from 'react';
 import "../Css/Produtos.css"
+import Footer from './footer';
 import Header from './Header';
 
 function Notebook() {
     return (
+        <>
         <main className="main">
             <Header />
             <div className="container">
@@ -66,6 +68,8 @@ function Notebook() {
                 </div>
             </div>
         </main>
+        <Footer/>
+        </>
     );
 }
 
