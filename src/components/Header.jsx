@@ -60,7 +60,7 @@ function Header() {
 
         <nav>
           <div className="espacamento">
-            <a className="navbar-a" href="/">Início</a>
+            <Link className="navbar-a" to="/">Início</Link>
 
             <div className="dropdown-wrapper">
               <a
